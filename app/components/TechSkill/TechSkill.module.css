@@ -5,12 +5,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 12px;
+  border-radius: 8px;
+  box-shadow: -1px -1px 20px 0.1px rgba(255, 255, 255, 0.05);
 
   background: linear-gradient(
     90deg,
-    rgb(1, 36, 36) 0%,
-    rgb(6, 70, 82) 35%,
-    rgb(4, 31, 33) 100%
+    rgb(14, 14, 14) 0%,
+    rgb(39, 39, 39) 45%,
+    rgb(27, 27, 27) 100%
   );
 }

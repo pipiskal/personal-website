@@ -7,6 +7,10 @@ import MongoDbSvg from "./MongoDbSvg";
 import NextJsSvg from "./NextJsSvg";
 import TanstackSvg from "./TanstackSvg";
 import TypescriptSvg from "./TypescriptSvg";
+import HtmlSvg from "./HtmlSvg";
+import GraphqlSvg from "./GraphqlSvg";
+import ZodSvg from "./ZodSvg";
+import JtwSvg from "./JtwSvg";
 
 const Icons = {
   ReactSvg,
@@ -18,6 +22,10 @@ const Icons = {
   NextJsSvg,
   TanstackSvg,
   TypescriptSvg,
+  HtmlSvg,
+  GraphqlSvg,
+  ZodSvg,
+  JtwSvg,
 } as const;
 
 export default Icons;

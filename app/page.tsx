@@ -1,21 +1,25 @@
-<button>Contact</button>;
 /* eslint-disable @typescript-eslint/no-explicit-any */
-// import Image from "next/image";
+<button>Contact</button>;
+
 import styles from "./page.module.css";
-// import Icon from "./components/Icon/Icon";
 import TechSkill from "./components/TechSkill/TechSkill";
 import Image from "next/image";
 
 const TECH_SKILLS_ICON_NAMES = [
   "ReactSvg",
   "CssSvg",
-  "ExpressJsSvg",
   "JavascriptSvg",
   "MongoDbSvg",
   "NextJsSvg",
   "TanstackSvg",
   "TypescriptSvg",
   "FigmaSvg",
+  "HtmlSvg",
+  "GraphqlSvg",
+  "ZodSvg",
+  "JtwSvg",
+  // "ExpressJsSvg",
+  // "NodeJsSvg",
 ] as const;
 
 export default function Home() {
@@ -80,18 +84,16 @@ export default function Home() {
 
       <br />
 
-      <main className={styles.main}>
-        <div
-          style={{
-            display: "flex",
-            gap: 46,
-          }}
-        >
-          {TECH_SKILLS_ICON_NAMES.map((skillName: string) => (
-            <TechSkill key={skillName} iconName={skillName as any} />
-          ))}
-        </div>
-      </main>
+      <div
+        style={{
+          display: "flex",
+          gap: 46,
+        }}
+      >
+        {TECH_SKILLS_ICON_NAMES.map((skillName: string) => (
+          <TechSkill key={skillName} iconName={skillName as any} />
+        ))}
+      </div>
     </div>
   );
 }

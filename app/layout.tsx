@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Open_Sans } from "next/font/google";
 import "./globals.css";
 import styles from "./page.module.css";
@@ -20,9 +21,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${openSans.className}`}>
+        <SpeedInsights />
+
         <div className={styles.blurryBackground} />
 
-        {/* <div className={styles.container}>
+        <div className={styles.container}>
           <div className={styles.shape}></div>
           <div className={styles.shape}></div>
           <div className={styles.shape}></div>
@@ -31,7 +34,7 @@ export default function RootLayout({
           <div className={styles.shape}></div>
           <div className={styles.shape}></div>
           <div className={styles.shape}></div>
-        </div> */}
+        </div>
 
         {children}
       </body>

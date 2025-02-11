@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className={`${openSans.className}`}>
         <div className={styles.blurryBackground} />
 
-        <div className={styles.container}>
+        {/* <div className={styles.container}>
           <div className={styles.shape}></div>
           <div className={styles.shape}></div>
           <div className={styles.shape}></div>
@@ -31,7 +31,7 @@ export default function RootLayout({
           <div className={styles.shape}></div>
           <div className={styles.shape}></div>
           <div className={styles.shape}></div>
-        </div>
+        </div> */}
 
         {children}
       </body>

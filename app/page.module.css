@@ -18,7 +18,7 @@
   transform: skewX(5deg);
   background: radial-gradient(
     circle,
-    rgba(69, 2, 75, 0.4),
+    rgba(69, 2, 75, 0.2),
     rgba(3, 117, 89, 0.2)
   );
 }
@@ -51,8 +51,8 @@
   height: 450px;
   background: radial-gradient(
     circle,
-    rgba(69, 2, 75, 0.43),
-    rgba(3, 117, 89, 0.5)
+    rgba(47, 1, 52, 0.3),
+    rgba(2, 79, 60, 0.3)
   );
   mix-blend-mode: screen;
   animation: morph 6s infinite ease-in-out alternate,
@@ -196,19 +196,53 @@
 }
 
 .heroText {
-  max-width: 50%;
+  display: inline-block;
+  max-width: 60%;
   font-size: 38px;
   background-image: radial-gradient(
     61% 200% at 39.7% 21.9%,
     rgb(255, 255, 255) 0%,
-    rgba(0, 0, 0, 1) 100%
+    rgb(82, 82, 82) 100%
   );
 
   background-clip: text;
-  display: inline-block;
   -webkit-text-fill-color: transparent;
   text-align: center;
+  margin-bottom: 32px;
 }
 
 .heroDescription {
+  max-width: 50%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  color: rgb(179, 194, 203);
+  line-height: 1.5;
+  margin-bottom: 48px;
+}
+
+.heroButtons {
+  display: flex;
+  gap: 32px;
+
+  & > button {
+    font-size: 18px;
+  }
+}
+
+.primaryButton {
+  height: 52px;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+  padding: 10px 24px;
+}
+
+.secondaryButton {
+  height: 52px;
+  padding: 10px 24px;
+  border-radius: 30px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
 }

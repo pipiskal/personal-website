@@ -1,3 +1,4 @@
+<button>Contact</button>;
 /* eslint-disable @typescript-eslint/no-explicit-any */
 // import Image from "next/image";
 import styles from "./page.module.css";
@@ -48,13 +49,18 @@ export default function Home() {
         </div>
 
         <p className={styles.heroText}>
-          Designed for Designers to showcase their work
+          Developer that get things done. Save time and money
         </p>
 
-        <p>
+        <p className={styles.heroDescription}>
           Helping startups and brands to craft expressive and engaging solutions
           for their software needs.
         </p>
+
+        <div className={styles.heroButtons}>
+          <button className={styles.primaryButton}>Contact Akira</button>
+          <button className={styles.secondaryButton}>Download CV</button>
+        </div>
       </div>
 
       <div className={styles.container}>
@@ -62,10 +68,10 @@ export default function Home() {
         <div className={styles.shape}></div>
         <div className={styles.shape}></div>
         <div className={styles.shape}></div>
-        {/* <div className={styles.shape}></div> */}
-        {/* <div className={styles.shape}></div> */}
-        {/* <div className={styles.shape}></div> */}
-        {/* <div className={styles.shape}></div> */}
+        <div className={styles.shape}></div>
+        <div className={styles.shape}></div>
+        <div className={styles.shape}></div>
+        <div className={styles.shape}></div>
       </div>
 
       <br />

@@ -21,7 +21,7 @@
   top: 30%;
   left: -20%;
   width: 140%;
-  max-height: 480px;
+  max-height: 540px;
   z-index: -1;
   height: 100%;
   overflow: hidden;
@@ -163,17 +163,42 @@
 .navigationItem {
   list-style: none;
 }
+/*
+@keyframes fadeInBottomToTop {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */
 
 .hero {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 64px 32px 48px 32px;
+
+  /* animation: fadeInBottomToTop 1s linear; */
+}
+
+@keyframes fadeInBottomToTopHeroAvatar {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .avatarWrapper {
   position: relative;
   margin-bottom: 64px;
+  animation: fadeInBottomToTopHeroAvatar 1s linear;
 }
 
 .avatarTag {
@@ -185,6 +210,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 12px;
   background-color: white;
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -195,10 +221,45 @@
   font-weight: 600;
 }
 
+@keyframes greenFlash {
+  0% {
+    background-color: white;
+  }
+
+  100% {
+    background-color: rgb(24, 218, 24);
+  }
+}
+
+.greenFlashingCircle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  animation: greenFlash 1.5s infinite;
+  transform: translateY(1px);
+}
+
+.openForWork {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+@keyframes fadeInBottomToTopHeroText {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .heroText {
   display: inline-block;
-  max-width: 60%;
-  font-size: 38px;
+  max-width: 80%;
+  font-size: 46px;
+  font-weight: 600;
   background-image: radial-gradient(
     61% 200% at 39.7% 21.9%,
     rgb(255, 255, 255) 0%,
@@ -209,6 +270,19 @@
   -webkit-text-fill-color: transparent;
   text-align: center;
   margin-bottom: 32px;
+
+  animation: fadeInBottomToTopHeroText 1s linear;
+}
+
+@keyframes fadeInBottomToTopHeroDescription {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .heroDescription {
@@ -219,11 +293,25 @@
   color: rgb(179, 194, 203);
   line-height: 1.5;
   margin-bottom: 48px;
+
+  animation: fadeInBottomToTopHeroDescription 1s linear;
+}
+
+@keyframes fadeInBottomToTopHeroButtons {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .heroButtons {
   display: flex;
   gap: 32px;
+  animation: fadeInBottomToTopHeroButtons 1s linear;
 
   & > button {
     font-size: 18px;
@@ -253,6 +341,15 @@
   }
 }
 
+@keyframes slideOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .techSkillsWrapper {
   max-width: 1080px;
   mask-image: linear-gradient(
@@ -262,6 +359,9 @@
     rgb(0, 0, 0) 87.5%,
     rgba(0, 0, 0, 0) 100%
   );
+
+  opacity: 0;
+  animation: slideOpacity 1s forwards 1s;
 }
 
 .marqueeTrack {

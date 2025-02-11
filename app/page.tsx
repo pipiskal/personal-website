@@ -39,6 +39,17 @@ export default function Home() {
           </ul>
         </div>
 
+        <div className={styles.container}>
+          <div className={styles.shape}></div>
+          <div className={styles.shape}></div>
+          <div className={styles.shape}></div>
+          <div className={styles.shape}></div>
+          <div className={styles.shape}></div>
+          <div className={styles.shape}></div>
+          <div className={styles.shape}></div>
+          <div className={styles.shape}></div>
+        </div>
+
         <div className={styles.hero}>
           <div className={styles.avatarWrapper}>
             <div className={styles.avatar}>
@@ -52,16 +63,20 @@ export default function Home() {
               />
             </div>
 
-            <div className={styles.avatarTag}>Software Engineer</div>
+            <div className={styles.avatarTag}>
+              <div className={styles.greenFlashingCircle} />
+              <span className={styles.openForWork}>OPEN FOR WORK</span>
+            </div>
           </div>
 
           <p className={styles.heroText}>
-            Developer that get things done. Save time and money
+            Passionate Software Engineer creating efficient, scalable, and
+            innovative solutions
           </p>
 
           <p className={styles.heroDescription}>
-            Helping startups and brands to craft expressive and engaging
-            solutions for their software needs.
+            Experienced front-end developer specializing in creating responsive,
+            clean, and user-friendly interfaces
           </p>
 
           <div className={styles.heroButtons}>
@@ -69,23 +84,6 @@ export default function Home() {
             <button className={styles.secondaryButton}>Download CV</button>
           </div>
         </div>
-
-        <div className={styles.container}>
-          <div className={styles.shape}></div>
-          <div className={styles.shape}></div>
-          <div className={styles.shape}></div>
-          <div className={styles.shape}></div>
-          <div className={styles.shape}></div>
-          <div className={styles.shape}></div>
-          <div className={styles.shape}></div>
-          <div className={styles.shape}></div>
-        </div>
-
-        <br />
-
-        <br />
-
-        <br />
 
         <div className={styles.techSkillsWrapper}>
           <div className={styles.marqueeTrack}>

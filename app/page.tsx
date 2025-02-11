@@ -24,77 +24,81 @@ const TECH_SKILLS_ICON_NAMES = [
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <div className={styles.navigation}>
-        <div>Ks</div>
+    <>
+      <div className={styles.blurryBackground} />
 
-        <ul className={styles.navigationList}>
-          <li className={styles.navigationItem}>Work</li>
-          <li className={styles.navigationItem}>Experience</li>
-          <li className={styles.navigationItem}>FAQ</li>
-          <li className={styles.navigationItem}>blog</li>
-        </ul>
-      </div>
+      <div className={styles.page}>
+        <div className={styles.navigation}>
+          <div>Ks</div>
 
-      <div className={styles.hero}>
-        <div className={styles.avatarWrapper}>
-          <div className={styles.avatar}>
-            <Image
-              src="/akiraFace.webp"
-              alt="my dogs face. Its an akita!"
-              width={76}
-              height={100}
-              quality={100}
-              priority
-            />
+          <ul className={styles.navigationList}>
+            <li className={styles.navigationItem}>Work</li>
+            <li className={styles.navigationItem}>Experience</li>
+            <li className={styles.navigationItem}>FAQ</li>
+            <li className={styles.navigationItem}>blog</li>
+          </ul>
+        </div>
+
+        <div className={styles.hero}>
+          <div className={styles.avatarWrapper}>
+            <div className={styles.avatar}>
+              <Image
+                src="/akiraFace.webp"
+                alt="my dogs face. Its an akita!"
+                width={76}
+                height={100}
+                quality={100}
+                priority
+              />
+            </div>
+
+            <div className={styles.avatarTag}>Software Engineer</div>
           </div>
 
-          <div className={styles.avatarTag}>Software Engineer</div>
+          <p className={styles.heroText}>
+            Developer that get things done. Save time and money
+          </p>
+
+          <p className={styles.heroDescription}>
+            Helping startups and brands to craft expressive and engaging
+            solutions for their software needs.
+          </p>
+
+          <div className={styles.heroButtons}>
+            <button className={styles.primaryButton}>Contact Akira</button>
+            <button className={styles.secondaryButton}>Download CV</button>
+          </div>
         </div>
 
-        <p className={styles.heroText}>
-          Developer that get things done. Save time and money
-        </p>
+        <div className={styles.container}>
+          <div className={styles.shape}></div>
+          <div className={styles.shape}></div>
+          <div className={styles.shape}></div>
+          <div className={styles.shape}></div>
+          <div className={styles.shape}></div>
+          <div className={styles.shape}></div>
+          <div className={styles.shape}></div>
+          <div className={styles.shape}></div>
+        </div>
 
-        <p className={styles.heroDescription}>
-          Helping startups and brands to craft expressive and engaging solutions
-          for their software needs.
-        </p>
+        <br />
 
-        <div className={styles.heroButtons}>
-          <button className={styles.primaryButton}>Contact Akira</button>
-          <button className={styles.secondaryButton}>Download CV</button>
+        <br />
+
+        <br />
+
+        <div className={styles.techSkillsWrapper}>
+          <div className={styles.marqueeTrack}>
+            {TECH_SKILLS_ICON_NAMES.map((skillName: string) => (
+              <TechSkill key={skillName} iconName={skillName as any} />
+            ))}
+
+            {TECH_SKILLS_ICON_NAMES.map((skillName: string) => (
+              <TechSkill key={skillName} iconName={skillName as any} />
+            ))}
+          </div>
         </div>
       </div>
-
-      <div className={styles.container}>
-        <div className={styles.shape}></div>
-        <div className={styles.shape}></div>
-        <div className={styles.shape}></div>
-        <div className={styles.shape}></div>
-        <div className={styles.shape}></div>
-        <div className={styles.shape}></div>
-        <div className={styles.shape}></div>
-        <div className={styles.shape}></div>
-      </div>
-
-      <br />
-
-      <br />
-
-      <br />
-
-      <div className={styles.techSkillsWrapper}>
-        <div className={styles.marqueeTrack}>
-          {TECH_SKILLS_ICON_NAMES.map((skillName: string) => (
-            <TechSkill key={skillName} iconName={skillName as any} />
-          ))}
-
-          {TECH_SKILLS_ICON_NAMES.map((skillName: string) => (
-            <TechSkill key={skillName} iconName={skillName as any} />
-          ))}
-        </div>
-      </div>
-    </div>
+    </>
   );
 }

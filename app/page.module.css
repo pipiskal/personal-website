@@ -1,10 +1,19 @@
+.blurryBackground {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-image: url("/blurybackground.png");
+  background-repeat: repeat;
+  background-size: 128px;
+  opacity: 0.075;
+}
+
 .page {
   position: relative;
   max-width: 1040px;
   width: 100%;
   height: 100%;
-
-  /* border: 1px solid red; */
+  z-index: 1;
 }
 
 .container {
@@ -16,13 +25,15 @@
   z-index: -1;
   height: 100%;
   overflow: hidden;
-  filter: blur(80px);
+  filter: blur(70px);
   transform: skewX(5deg);
   background: radial-gradient(
     circle,
     rgba(69, 2, 75, 0.2),
     rgba(3, 117, 89, 0.2)
   );
+
+  opacity: 0.7;
 }
 
 @keyframes rotate {
@@ -32,19 +43,6 @@
   100% {
     transform: rotate(360deg);
   }
-}
-
-.gradient {
-  max-width: 200px;
-  width: 100%;
-  height: 200px;
-  /* filter: blur(calc(100px / 5)); */
-  filter: blur(100px);
-  /* background-image: linear-gradient(hsl(222, 84, 60, 100%), hsl(164, 79, 71)); */
-  background-image: linear-gradient(hsl(0, 0%, 84%), hsl(193, 38%, 69%));
-  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-  animation: rotate 3s cubic-bezier(0.8, 0.2, 0.2, 0.8) alternate infinite;
-  transition: all 0.5s ease;
 }
 
 .shape {
@@ -59,6 +57,8 @@
   mix-blend-mode: screen;
   animation: morph 6s infinite ease-in-out alternate,
     move 10s infinite ease-in-out alternate;
+
+  /* opacity: 0.5; */
 }
 
 @keyframes morph {
@@ -269,5 +269,5 @@
   display: flex;
   gap: 64px;
   width: max-content;
-  animation: slide 15s linear infinite;
+  animation: slide 40s linear infinite;
 }

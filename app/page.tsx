@@ -1,6 +1,4 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-<button>Contact</button>;
-
 import styles from "./page.module.css";
 import TechSkill from "./components/TechSkill/TechSkill";
 import Image from "next/image";
@@ -25,8 +23,6 @@ const TECH_SKILLS_ICON_NAMES = [
 export default function Home() {
   return (
     <>
-      <div className={styles.blurryBackground} />
-
       <div className={styles.page}>
         <div className={styles.navigation}>
           <div>Ks</div>
@@ -37,17 +33,6 @@ export default function Home() {
             <li className={styles.navigationItem}>FAQ</li>
             <li className={styles.navigationItem}>blog</li>
           </ul>
-        </div>
-
-        <div className={styles.container}>
-          <div className={styles.shape}></div>
-          <div className={styles.shape}></div>
-          <div className={styles.shape}></div>
-          <div className={styles.shape}></div>
-          <div className={styles.shape}></div>
-          <div className={styles.shape}></div>
-          <div className={styles.shape}></div>
-          <div className={styles.shape}></div>
         </div>
 
         <div className={styles.hero}>

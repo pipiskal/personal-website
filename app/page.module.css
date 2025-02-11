@@ -179,7 +179,7 @@
 .avatarTag {
   position: absolute;
   bottom: -26px;
-  left: -18px;
+  left: -20px;
   height: 38px;
   width: min-content;
   display: flex;
@@ -192,7 +192,6 @@
   padding: 10px 14px;
   white-space: nowrap;
   font-size: 14px;
-  font-family: "Inter";
   font-weight: 600;
 }
 
@@ -246,4 +245,29 @@
   background-color: transparent;
   border: 1px solid white;
   color: white;
+}
+
+@keyframes slide {
+  100% {
+    -webkit-transform: translateX(-50%);
+  }
+}
+
+.techSkillsWrapper {
+  max-width: 1080px;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    rgb(0, 0, 0) 12.5%,
+    rgb(0, 0, 0) 87.5%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.marqueeTrack {
+  padding: 64px 32px;
+  display: flex;
+  gap: 64px;
+  width: max-content;
+  animation: slide 15s linear infinite;
 }

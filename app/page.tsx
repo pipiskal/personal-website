@@ -84,15 +84,16 @@ export default function Home() {
 
       <br />
 
-      <div
-        style={{
-          display: "flex",
-          gap: 46,
-        }}
-      >
-        {TECH_SKILLS_ICON_NAMES.map((skillName: string) => (
-          <TechSkill key={skillName} iconName={skillName as any} />
-        ))}
+      <div className={styles.techSkillsWrapper}>
+        <div className={styles.marqueeTrack}>
+          {TECH_SKILLS_ICON_NAMES.map((skillName: string) => (
+            <TechSkill key={skillName} iconName={skillName as any} />
+          ))}
+
+          {TECH_SKILLS_ICON_NAMES.map((skillName: string) => (
+            <TechSkill key={skillName} iconName={skillName as any} />
+          ))}
+        </div>
       </div>
     </div>
   );

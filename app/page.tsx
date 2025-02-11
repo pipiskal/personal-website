@@ -18,7 +18,7 @@ const TECH_SKILLS_ICON_NAMES = [
   "GraphqlSvg",
   "ZodSvg",
   "JtwSvg",
-  // "ExpressJsSvg",
+  "ExpressJsSvg",
   // "NodeJsSvg",
 ] as const;
 

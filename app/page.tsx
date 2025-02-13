@@ -1,5 +1,5 @@
 import Navigation from "./sections/Navigation/Navigation";
-// import ShapesBackground from "./components/ShapesBackgound/ShapesBackground";
+import ShapesBackground from "./components/ShapesBackgound/ShapesBackground";
 import TechSkillList from "./components/TechSkillList/TeckSkillList";
 import styles from "./page.module.css";
 import Hero from "./sections/Hero/Hero";
@@ -11,7 +11,7 @@ export default function Home() {
     <main className={styles.mainWrapper}>
       <div className={styles.blurryBackground} />
 
-      {/* <ShapesBackground /> */}
+      <ShapesBackground />
 
       <div className={styles.page}>
         <Navigation />

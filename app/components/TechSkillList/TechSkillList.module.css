@@ -1,0 +1,36 @@
+@keyframes slide {
+  100% {
+    -webkit-transform: translateX(-50%);
+  }
+}
+
+@keyframes slideOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.techSkillsWrapper {
+  max-width: 1080px;
+  opacity: 0;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    rgb(0, 0, 0) 12.5%,
+    rgb(0, 0, 0) 87.5%,
+    rgba(0, 0, 0, 0) 100%
+  );
+
+  animation: slideOpacity 1s forwards 1s;
+}
+
+.marqueeTrack {
+  padding: 64px 32px;
+  display: flex;
+  gap: 64px;
+  width: max-content;
+  animation: slide 40s linear infinite;
+}

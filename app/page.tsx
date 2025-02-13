@@ -3,10 +3,12 @@ import Navigation from "./sections/Navigation/Navigation";
 import TechSkillList from "./components/TechSkillList/TeckSkillList";
 import styles from "./page.module.css";
 import Hero from "./sections/Hero/Hero";
+import SkillTagList from "./components/SkillTagList/SkillTagList";
+import Experience from "./sections/Experience/Experience";
 
 export default function Home() {
   return (
-    <>
+    <main className={styles.mainWrapper}>
       <div className={styles.blurryBackground} />
 
       {/* <ShapesBackground /> */}
@@ -17,7 +19,19 @@ export default function Home() {
         <Hero />
 
         <TechSkillList />
+
+        <h2>Skills</h2>
+        <SkillTagList />
+
+        <h2>Skills</h2>
+        <SkillTagList />
+
+        <h2>Skills</h2>
+        <SkillTagList />
+
+        <h2>Experience</h2>
+        <Experience />
       </div>
-    </>
+    </main>
   );
 }

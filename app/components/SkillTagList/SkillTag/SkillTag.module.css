@@ -1,0 +1,12 @@
+.wrapper {
+  width: min-content;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background-color: rgba(12, 21, 31);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(209, 218, 224);
+  word-wrap: break-word;
+  white-space: nowrap;
+  text-align: center;
+  font-weight: 300;
+}

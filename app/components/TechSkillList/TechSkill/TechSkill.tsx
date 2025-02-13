@@ -1,7 +1,7 @@
 import { JSX } from "react";
 import s from "./TechSkill.module.css";
-import Icon from "../Icon/Icon";
-import Icons from "../Icon/Icons";
+import Icons from "../../Icon/Icons";
+import Icon from "../../Icon/Icon";
 
 type TechSkillProps = {
   iconName: keyof typeof Icons;

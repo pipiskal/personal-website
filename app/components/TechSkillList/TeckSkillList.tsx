@@ -1,6 +1,6 @@
 import { JSX } from "react";
-import TechSkill from "../TechSkill/TechSkill";
 import styles from "./TechSkillList.module.css";
+import TechSkill from "./TechSkill/TechSkill";
 
 const TechSkillList = (): JSX.Element => {
   const TECH_SKILLS_ICON_NAMES = [

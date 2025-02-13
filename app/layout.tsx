@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 import { Open_Sans } from "next/font/google";
 import "./globals.css";
 
@@ -20,11 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${openSans.className}`}>
-        <SpeedInsights />
+      <SpeedInsights />
+      <Analytics />
 
-        {children}
-      </body>
+      <body className={`${openSans.className}`}>{children}</body>
     </html>
   );
 }

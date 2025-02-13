@@ -16,7 +16,7 @@ const TechSkillList = (): JSX.Element => {
     "GraphqlSvg",
     "ZodSvg",
     "JtwSvg",
-    "ExpressJsSvg",
+    // "ExpressJsSvg",
     // "NodeJsSvg",
   ] as const;
 

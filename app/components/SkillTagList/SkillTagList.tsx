@@ -6,9 +6,13 @@ import SkillTag from "./SkillTag/SkillTag";
 const SkillTagList = (): JSX.Element => {
   return (
     <div className={styles.wrapper}>
-      {SKILLS.map((skill) => (
-        <SkillTag key={skill} tagName={skill} />
-      ))}
+      <h2>Skills</h2>
+
+      <div className={styles.skillsWrapper}>
+        {SKILLS.map((skill) => (
+          <SkillTag key={skill} tagName={skill} />
+        ))}
+      </div>
     </div>
   );
 };

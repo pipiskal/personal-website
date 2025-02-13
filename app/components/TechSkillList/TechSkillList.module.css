@@ -14,7 +14,8 @@
 }
 
 .techSkillsWrapper {
-  max-width: 1080px;
+  margin: 0 auto;
+  max-width: 1000px;
   opacity: 0;
   mask-image: linear-gradient(
     to right,

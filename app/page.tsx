@@ -20,16 +20,8 @@ export default function Home() {
 
         <TechSkillList />
 
-        <h2>Skills</h2>
         <SkillTagList />
 
-        <h2>Skills</h2>
-        <SkillTagList />
-
-        <h2>Skills</h2>
-        <SkillTagList />
-
-        <h2>Experience</h2>
         <Experience />
       </div>
     </main>

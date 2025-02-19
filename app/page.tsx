@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
+// "use client";
 import Navigation from "./sections/Navigation/Navigation";
 import ShapesBackground from "./components/ShapesBackgound/ShapesBackground";
 import TechSkillList from "./components/TechSkillList/TeckSkillList";
@@ -8,31 +9,33 @@ import SkillTagList from "./components/SkillTagList/SkillTagList";
 import Experience from "./sections/Experience/Experience";
 import Image from "next/image";
 
-import { useState } from "react";
 import Carousel from "./components/Carousel/Carousel";
+import { useRef } from "react";
+import Projects from "./sections/Projects/Projects";
 
 export default function Home() {
   // console.log("active", active);
+  // const firstBox = useRef(null);
 
   return (
     <main className={styles.mainWrapper}>
       <div className={styles.blurryBackground} />
 
-      <ShapesBackground />
+      {/* <ShapesBackground /> */}
 
-      <div className={styles.page}>
-        <Navigation />
+      <Navigation />
 
-        <Hero />
+      <Hero />
 
-        <TechSkillList />
+      <TechSkillList />
 
-        <Carousel />
+      <Projects />
 
-        <SkillTagList />
+      {/* <Carousel /> */}
 
-        <Experience />
-      </div>
+      <SkillTagList />
+
+      <Experience />
     </main>
   );
 }

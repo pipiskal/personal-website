@@ -32,7 +32,7 @@ const Carousel = (): JSX.Element => {
   const [active, setActive] = useState(0);
 
   return (
-    <div className={styles.wrapper}>
+    <div className={`${styles.wrapper} maxWrapper`}>
       {/* <Image
         src={items[active].image}
         alt={"test"}
@@ -58,13 +58,13 @@ const Carousel = (): JSX.Element => {
               <img
                 src={item.image}
                 alt={"test"}
-                className={`${isActive ? styles.takis : styles.takis2}`}
+                className={`${styles.displayedImage}`}
               />
 
-              {/* <div className={`${isActive && `${styles.text2}`}`}>
-                  <h2>{item.header}</h2>
-                  <p>{item.text}</p>
-                </div> */}
+              <div className={`${isActive && `${styles.text2}`}`}>
+                <p>{item.header}</p>
+                {/* <p>{item.text}</p> */}
+              </div>
             </div>
           );
         })}

@@ -21,7 +21,7 @@ const TechSkillList = (): JSX.Element => {
   ] as const;
 
   return (
-    <div className={styles.techSkillsWrapper}>
+    <div className={`${styles.techSkillsWrapper} maxWrapper`}>
       <div className={styles.marqueeTrack}>
         {TECH_SKILLS_ICON_NAMES.map((skillName: string) => (
           // eslint-disable-next-line @typescript-eslint/no-explicit-any

@@ -1,0 +1,179 @@
+.projects {
+  /* border: 1px solid red; */
+  /* max-height: 400px; */
+  /* overflow-y: scroll; */
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+
+  width: 100%;
+
+  perspective: 1200px;
+}
+
+.blurryEffect {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 60%;
+  background-color: rgba(130, 201, 94, 1);
+  border-radius: 1000px;
+  opacity: 0.15;
+  filter: blur(100px);
+  /* transform-style: preserve-3d; */
+}
+
+.projectCard1 {
+  width: 100%;
+  position: sticky;
+  top: 100px;
+  height: 500px;
+  background-color: rgba(15, 21, 31);
+  border: 1px solid rgba(204, 204, 204, 0.1);
+  border-radius: 32px;
+  padding: 60px 40px;
+  overflow: hidden;
+  /* transform-style: preserve-3d; */
+
+  transform: matrix3d(
+    0.97865,
+    0,
+    0,
+    0,
+    0,
+    0.97865,
+    0,
+    0,
+    0,
+    0,
+    1,
+    -0.000833333,
+    0,
+    0,
+    0,
+    1
+  );
+
+  /* perspective: 1200px; */
+  /* transform: translateZ(-160px); */
+  /* transform: scale3d(0.9, 0.9, 0.9); */
+
+  /* scale: 0.9; */
+
+  scale: 1;
+  transition: all 0.4s ease;
+}
+
+.projectCard2 {
+  position: relative;
+  /* max-width: 1016px; */
+  width: 100%;
+  position: sticky;
+  top: 140px;
+  height: 500px;
+  background-color: rgba(15, 21, 31);
+  border: 1px solid rgba(204, 204, 204, 0.1);
+  border-radius: 32px;
+  padding: 60px 40px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+
+  /* transform: translateZ(-140px); */
+
+  transform: matrix3d(
+    0.97865,
+    0,
+    0,
+    0,
+    0,
+    0.97865,
+    0,
+    0,
+    0,
+    0,
+    1,
+    -0.000833333,
+    0,
+    0,
+    0,
+    1
+  );
+
+  scale: 1;
+}
+
+.projectCard3 {
+  position: relative;
+  /* max-width: 1016px; */
+  width: 100%;
+  position: sticky;
+  top: 180px;
+  height: 500px;
+  background-color: rgba(15, 21, 31);
+  border: 1px solid rgba(204, 204, 204, 0.1);
+  border-radius: 32px;
+  padding: 60px 40px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+
+  /* transform: translateZ(-120px); */
+
+  transform: matrix3d(
+    0.97865,
+    0,
+    0,
+    0,
+    0,
+    0.97865,
+    0,
+    0,
+    0,
+    0,
+    1,
+    -0.000833333,
+    0,
+    0,
+    0,
+    1
+  );
+
+  scale: 1;
+}
+
+.projectCard4 {
+  position: relative;
+  /* max-width: 1016px; */
+  width: 100%;
+  position: sticky;
+  top: 220px;
+  height: 500px;
+  background-color: rgba(15, 21, 31);
+  border: 1px solid rgba(204, 204, 204, 0.1);
+  border-radius: 32px;
+  padding: 60px 40px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+
+  /* transform: translateZ(-100px); */
+
+  transform: matrix3d(
+    0.97865,
+    0,
+    0,
+    0,
+    0,
+    0.97865,
+    0,
+    0,
+    0,
+    0,
+    1,
+    -0.000833333,
+    0,
+    0,
+    0,
+    1
+  );
+}

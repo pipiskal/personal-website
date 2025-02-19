@@ -4,7 +4,7 @@ import { EXPERIENCE } from "@/app/modules/constants";
 
 const Experience = (): JSX.Element => {
   return (
-    <div className={styles.wrapper}>
+    <div className={`${styles.wrapper} maxWrapper`}>
       <h2>Experience</h2>
 
       <div className={styles.experienceWrapper}>

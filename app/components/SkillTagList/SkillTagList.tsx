@@ -5,7 +5,7 @@ import SkillTag from "./SkillTag/SkillTag";
 
 const SkillTagList = (): JSX.Element => {
   return (
-    <div className={styles.wrapper}>
+    <div className={`${styles.wrapper} maxWrapper`}>
       <h2>Skills</h2>
 
       <div className={styles.skillsWrapper}>

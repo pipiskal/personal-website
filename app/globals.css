@@ -26,3 +26,8 @@ h2 {
   margin-bottom: 64px;
   padding-left: 32px;
 }
+
+.maxWrapper {
+  max-width: 1040px;
+  width: 100%;
+}

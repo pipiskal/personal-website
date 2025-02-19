@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Hero = (): JSX.Element => {
   return (
-    <div className={styles.hero}>
+    <div className={`${styles.hero} maxWrapper`}>
       <div className={styles.avatarWrapper}>
         <div className={styles.avatar}>
           <Image

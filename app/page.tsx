@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-// "use client";
 import Navigation from "./sections/Navigation/Navigation";
 import ShapesBackground from "./components/ShapesBackgound/ShapesBackground";
 import TechSkillList from "./components/TechSkillList/TeckSkillList";
@@ -10,18 +9,14 @@ import Experience from "./sections/Experience/Experience";
 import Image from "next/image";
 
 import Carousel from "./components/Carousel/Carousel";
-import { useRef } from "react";
 import Projects from "./sections/Projects/Projects";
 
 export default function Home() {
-  // console.log("active", active);
-  // const firstBox = useRef(null);
-
   return (
     <main className={styles.mainWrapper}>
       <div className={styles.blurryBackground} />
 
-      {/* <ShapesBackground /> */}
+      <ShapesBackground />
 
       <Navigation />
 

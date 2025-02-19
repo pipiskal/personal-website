@@ -9,7 +9,9 @@
 
   width: 100%;
 
-  perspective: 1200px;
+  /* perspective: 1200px; */
+
+  margin-bottom: 64px;
 }
 
 .blurryEffect {
@@ -18,18 +20,37 @@
   top: 0;
   height: 100%;
   width: 60%;
-  background-color: rgba(130, 201, 94, 1);
+  /* background-color: rgba(130, 201, 94, 1); */
   border-radius: 1000px;
   opacity: 0.15;
   filter: blur(100px);
   /* transform-style: preserve-3d; */
 }
 
-.projectCard1 {
-  width: 100%;
+.blurryGreen {
+  background-color: rgba(130, 201, 94, 1);
+}
+
+.blurryPurple {
+  background-color: rgb(182, 57, 221);
+}
+
+.blurryYellow {
+  background-color: rgb(228, 231, 63);
+}
+
+.blurryRed {
+  background-color: rgb(228, 63, 63);
+}
+
+.projectCard {
   position: sticky;
   top: 100px;
+  width: 100%;
   height: 500px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
   background-color: rgba(15, 21, 31);
   border: 1px solid rgba(204, 204, 204, 0.1);
   border-radius: 32px;
@@ -66,114 +87,83 @@
   transition: all 0.4s ease;
 }
 
-.projectCard2 {
-  position: relative;
-  /* max-width: 1016px; */
-  width: 100%;
-  position: sticky;
-  top: 140px;
-  height: 500px;
-  background-color: rgba(15, 21, 31);
-  border: 1px solid rgba(204, 204, 204, 0.1);
-  border-radius: 32px;
-  padding: 60px 40px;
-  overflow: hidden;
-  transition: all 0.4s ease;
-
-  /* transform: translateZ(-140px); */
-
-  transform: matrix3d(
-    0.97865,
-    0,
-    0,
-    0,
-    0,
-    0.97865,
-    0,
-    0,
-    0,
-    0,
-    1,
-    -0.000833333,
-    0,
-    0,
-    0,
-    1
-  );
-
-  scale: 1;
+.infoSection {
+  display: flex;
+  flex-direction: column;
+  max-width: 45%;
+  justify-content: space-between;
 }
 
-.projectCard3 {
-  position: relative;
-  /* max-width: 1016px; */
-  width: 100%;
-  position: sticky;
-  top: 180px;
-  height: 500px;
-  background-color: rgba(15, 21, 31);
-  border: 1px solid rgba(204, 204, 204, 0.1);
-  border-radius: 32px;
-  padding: 60px 40px;
-  overflow: hidden;
-  transition: all 0.4s ease;
-
-  /* transform: translateZ(-120px); */
-
-  transform: matrix3d(
-    0.97865,
-    0,
-    0,
-    0,
-    0,
-    0.97865,
-    0,
-    0,
-    0,
-    0,
-    1,
-    -0.000833333,
-    0,
-    0,
-    0,
-    1
-  );
-
-  scale: 1;
+.imageSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.projectCard4 {
+.projectImageWrapper {
   position: relative;
-  /* max-width: 1016px; */
-  width: 100%;
-  position: sticky;
-  top: 220px;
-  height: 500px;
-  background-color: rgba(15, 21, 31);
-  border: 1px solid rgba(204, 204, 204, 0.1);
-  border-radius: 32px;
-  padding: 60px 40px;
+  /* max-width: 428px; */
+  /* width: 100%; */
+  width: 428px;
+  height: 268px;
+  border-radius: 20px;
   overflow: hidden;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
+  /* color: rgba(230, 230, 230); */
+  margin-bottom: 24px;
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 400;
+  /* color: rgb(179 194 203); */
+  color: rgba(230, 230, 230);
+
+  line-height: 26px;
+}
+
+.projectImage {
+}
+
+.viewCaseStudy {
+  width: 152px;
+  height: 48px;
+  border: 1px solid rgba(204, 204, 204, 0.1);
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+
   transition: all 0.4s ease;
 
-  /* transform: translateZ(-100px); */
+  &:hover {
+    font-weight: 600;
+    border-color: white;
+  }
+}
 
-  transform: matrix3d(
-    0.97865,
-    0,
-    0,
-    0,
-    0,
-    0.97865,
-    0,
-    0,
-    0,
-    0,
-    1,
-    -0.000833333,
-    0,
-    0,
-    0,
-    1
-  );
+.techWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.technologyTitle {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.techDescription {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
 }

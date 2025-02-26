@@ -8,6 +8,10 @@
 
   padding: 0 16px;
   perspective: 1200px;
+
+  @media (max-width: 550px) {
+    gap: 120px;
+  }
 }
 
 .blurryEffect {
@@ -41,6 +45,8 @@
   position: sticky;
   top: 100px;
   width: 100%;
+  /* height: 760px; */
+
   display: flex;
   justify-content: space-between;
   gap: 24px;
@@ -50,12 +56,29 @@
   padding: 60px 40px;
   overflow: hidden;
   scale: 1;
-  transition: all 0.2s ease;
+  transition: all 0.4s ease;
 
   @media (max-width: 550px) {
     flex-direction: column;
     gap: 40px;
     padding: 32px;
+    top: 20px;
+  }
+}
+
+.box2 {
+  top: 140px;
+
+  @media (max-width: 550px) {
+    top: 40px;
+  }
+}
+
+.box3 {
+  top: 180px;
+
+  @media (max-width: 550px) {
+    top: 60px;
   }
 }
 
@@ -89,12 +112,6 @@
   height: 268px;
   border-radius: 20px;
   overflow: hidden;
-
-  /* @media (max-width: 550px) {
-    & > img {
-      object-fit: fill;
-    }
-  } */
 }
 
 .title {
@@ -158,31 +175,3 @@
   font-weight: 500;
   color: white;
 }
-
-/* transform: matrix3d(
-    0.97865,
-    0,
-    0,
-    0,
-    0,
-    0.97865,
-    0,
-    0,
-    0,
-    0,
-    1,
-    -0.000833333,
-    0,
-    0,
-    0,
-    1
-  ); */
-
-/* perspective: 1200px; */
-/* transform: translateZ(-160px); */
-/* transform: scale3d(0.9, 0.9, 0.9); */
-
-/* scale: 0.9; */
-
-/* color: rgb(179 194 203); */
-/* color: rgba(230, 230, 230); */

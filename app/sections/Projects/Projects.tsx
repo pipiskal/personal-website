@@ -59,7 +59,7 @@ const Projects = (): JSX.Element => {
       className={`${styles.projects} maxWrapper`}
       onScroll={(e) => console.log(e)}
     >
-      <div id="box1" className={`${styles.projectCard} card`}>
+      <div className={`${styles.projectCard} card`}>
         <div className={`${styles.blurryEffect} ${styles.blurryGreen}`} />
 
         <div className={styles.infoSection}>
@@ -105,13 +105,7 @@ const Projects = (): JSX.Element => {
         </div>
       </div>
 
-      <div
-        id="box2"
-        className={`${styles.projectCard} card`}
-        style={{
-          top: 140,
-        }}
-      >
+      <div className={`${styles.projectCard} ${styles.box2} card `}>
         <div className={`${styles.blurryEffect} ${styles.blurryPurple}`} />
 
         <div className={styles.infoSection}>
@@ -151,13 +145,7 @@ const Projects = (): JSX.Element => {
         </div>
       </div>
 
-      <div
-        id="box3"
-        className={`${styles.projectCard} card`}
-        style={{
-          top: 180,
-        }}
-      >
+      <div id="" className={`${styles.projectCard} ${styles.box3}  card`}>
         <div className={`${styles.blurryEffect} ${styles.blurryYellow}`} />
 
         <div className={styles.infoSection}>
@@ -200,13 +188,7 @@ const Projects = (): JSX.Element => {
         </div>
       </div>
 
-      <div
-        id="box4"
-        className={`${styles.projectCard} card`}
-        style={{
-          top: 220,
-        }}
-      >
+      <div className={`${styles.projectCard} ${styles.box4} card`}>
         <div className={`${styles.blurryEffect} ${styles.blurryRed}`} />
 
         <div className={styles.infoSection}>

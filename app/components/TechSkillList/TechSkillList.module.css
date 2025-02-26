@@ -27,6 +27,7 @@
 
   animation: slideOpacity 1s forwards 1s;
   margin-bottom: 32px;
+  overflow: hidden;
 }
 
 .marqueeTrack {

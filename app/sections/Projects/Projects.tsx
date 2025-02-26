@@ -6,58 +6,50 @@ import styles from "./Projects.module.css";
 import Link from "next/link";
 
 const Projects = (): JSX.Element => {
-  const firstBox = useRef(null);
-  const secondBox = useRef(null);
-  const thirdBox = useRef(null);
-  const fourthBox = useRef(null);
+  // const handleScroll = (cards: any, stickyOffset, maxScale) => {
+  //   cards.forEach((card, index) => {
+  //     const cardRect = card.getBoundingClientRect();
+  //     const cardTop = cardRect.top; // Distance from the top of the viewport
 
-  //   useEffect(() => {
-  //     const scrollY = window?.scrollY;
-  //     const projectWrapper =
-  //       document.getElementById("projectsWrapper")?.scrollTop;
+  //     console.log("cardTop", cardTop, "index", index);
 
-  //     console.log("scrollY", scrollY);
-  //     console.log("projectWrapper", projectWrapper);
-  //   }, []);
+  //     // Check if the card has reached the sticky position
+  //     if (cardTop > stickyOffset) {
+  //       const scale = Math.max(1 - cardTop * 0.0001, 0.85);
 
-  // console.log("firstBox", firstBox.current?.scrollTop);
+  //       card.style.transform = `scale(${scale})`;
+  //     }
+  //     // else {
+  //     //   // Reset the scale if the card is not at the sticky position
+  //     //   card.style.transform = "scale(1)";
+  //     // }
 
-  // const handleScroll = (element: any) => {
-  //   const position = window.pageYOffset;
-  //   console.log("position", position);
-
-  //   if (position > 800 && position < 1300) {
-  //     firstBox.current?.setAttribute(
-  //       "style",
-  //       `scale : ${1 - position / 10000}`
-  //     );
-  //   }
-
-  //   if (position > 1300 && position < 1800) {
-  //     secondBox.current?.setAttribute(
-  //       "style",
-  //       `scale : ${1 - position / 40000}`
-  //     );
-  //   }
-
-  //   if (position > 1800 && position < 2000) {
-  //     thirdBox.current?.setAttribute(
-  //       "style",
-  //       `scale : ${1 - position * 0.00002}`
-  //     );
-  //   }
-
-  //   // if (position > 2300 && position < 2300) {
-  //   //   thirdBox.current?.setAttribute("style", `scale : ${1 - position / 8000}`);
-  //   // }
+  //     // Enable scaling for the next card only if the current card has reached the sticky position
+  //     // if (index < cards.length - 1) {
+  //     //   const nextCard = cards[index + 1];
+  //     //   const nextCardRect = nextCard.getBoundingClientRect();
+  //     //   if (cardTop <= stickyOffset && nextCardRect.top > stickyOffset) {
+  //     //     nextCard.style.position = "sticky";
+  //     //     nextCard.style.top = `${stickyOffset}px`;
+  //     //   }
+  //     // }
+  //   });
   // };
 
   // useEffect(() => {
-  //   window.addEventListener("scroll", handleScroll, { passive: true });
-  //   // const takis2 = document.getElementById("takis");
+  //   const cards = document.querySelectorAll(".card");
+  //   const stickyOffset = 100; // Sticky position offset (100px from the top)
+  //   const maxScale = 0.85; // Minimum scale value
+  //   // const maxScroll = document.body.scrollHeight - window.innerHeight;
+
+  //   window.addEventListener("scroll", () =>
+  //     handleScroll(cards, stickyOffset, maxScale)
+  //   );
 
   //   return () => {
-  //     window.removeEventListener("scroll", () => handleScroll(takis2));
+  //     window.removeEventListener("scroll", () =>
+  //       handleScroll(cards, stickyOffset, maxScale)
+  //     );
   //   };
   // }, []);
 
@@ -67,7 +59,7 @@ const Projects = (): JSX.Element => {
       className={`${styles.projects} maxWrapper`}
       onScroll={(e) => console.log(e)}
     >
-      <div id="box1" className={styles.projectCard}>
+      <div id="box1" className={`${styles.projectCard} card`}>
         <div className={`${styles.blurryEffect} ${styles.blurryGreen}`} />
 
         <div className={styles.infoSection}>
@@ -106,16 +98,16 @@ const Projects = (): JSX.Element => {
           <div className={styles.techWrapper}>
             <h4 className={styles.technologyTitle}>Tech stack</h4>
 
-            <p className={styles.techDescription}>
+            {/* <p className={styles.techDescription}>
               Next js - MongoDB - Express
-            </p>
+            </p> */}
           </div>
         </div>
       </div>
 
       <div
         id="box2"
-        className={styles.projectCard}
+        className={`${styles.projectCard} card`}
         style={{
           top: 140,
         }}
@@ -154,14 +146,14 @@ const Projects = (): JSX.Element => {
           <div className={styles.techWrapper}>
             <h4 className={styles.technologyTitle}>Tech stack</h4>
 
-            <p className={styles.techDescription}>Next js</p>
+            {/* <p className={styles.techDescription}>Next js</p> */}
           </div>
         </div>
       </div>
 
       <div
         id="box3"
-        className={styles.projectCard}
+        className={`${styles.projectCard} card`}
         style={{
           top: 180,
         }}
@@ -201,16 +193,16 @@ const Projects = (): JSX.Element => {
           <div className={styles.techWrapper}>
             <h4 className={styles.technologyTitle}>Tech stack</h4>
 
-            <p className={styles.techDescription}>
+            {/* <p className={styles.techDescription}>
               Next js - MongoDB - Express - Tanstack Query - Zustand
-            </p>
+            </p> */}
           </div>
         </div>
       </div>
 
       <div
         id="box4"
-        className={styles.projectCard}
+        className={`${styles.projectCard} card`}
         style={{
           top: 220,
         }}
@@ -252,9 +244,9 @@ const Projects = (): JSX.Element => {
           <div className={styles.techWrapper}>
             <h4 className={styles.technologyTitle}>Tech stack</h4>
 
-            <p className={styles.techDescription}>
+            {/* <p className={styles.techDescription}>
               NX - Next js - React Native - MongoDB - Express
-            </p>
+            </p> */}
           </div>
         </div>
       </div>

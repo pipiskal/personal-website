@@ -16,7 +16,7 @@ export default function Home() {
     <main className={styles.mainWrapper}>
       <div className={styles.blurryBackground} />
 
-      <ShapesBackground />
+      {/* <ShapesBackground /> */}
 
       <Navigation />
 

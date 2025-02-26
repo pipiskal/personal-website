@@ -61,4 +61,16 @@ export const SKILLS = [
   // "Decision Making",
 ];
 
-export const TECH_STACK = ["React", "Nextjs"];
+export const TECH_STACK = [
+  "Javascript",
+  "Typescript",
+  "React",
+  "Nextjs",
+  "Css",
+  "Sass",
+  "TanStack Query",
+  "Zod",
+  "GraphQl",
+  "Styled Components",
+  "Zustand",
+];

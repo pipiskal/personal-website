@@ -29,8 +29,10 @@ const Hero = (): JSX.Element => {
       </p>
 
       <p className={styles.heroDescription}>
-        Experienced front-end developer specializing in creating responsive,
-        clean, and user-friendly interfaces
+        {/* Experienced front-end developer specializing in creating responsive,
+        clean, and user-friendly interfaces */}
+        Experienced front-end developer translating complex needs into software
+        solutions
       </p>
 
       <div className={styles.heroButtons}>

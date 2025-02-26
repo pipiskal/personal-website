@@ -98,9 +98,9 @@ const Projects = (): JSX.Element => {
           <div className={styles.techWrapper}>
             <h4 className={styles.technologyTitle}>Tech stack</h4>
 
-            {/* <p className={styles.techDescription}>
+            <p className={styles.techDescription}>
               Next js - MongoDB - Express
-            </p> */}
+            </p>
           </div>
         </div>
       </div>
@@ -146,7 +146,7 @@ const Projects = (): JSX.Element => {
           <div className={styles.techWrapper}>
             <h4 className={styles.technologyTitle}>Tech stack</h4>
 
-            {/* <p className={styles.techDescription}>Next js</p> */}
+            <p className={styles.techDescription}>Next js</p>
           </div>
         </div>
       </div>
@@ -193,9 +193,9 @@ const Projects = (): JSX.Element => {
           <div className={styles.techWrapper}>
             <h4 className={styles.technologyTitle}>Tech stack</h4>
 
-            {/* <p className={styles.techDescription}>
+            <p className={styles.techDescription}>
               Next js - MongoDB - Express - Tanstack Query - Zustand
-            </p> */}
+            </p>
           </div>
         </div>
       </div>
@@ -244,9 +244,9 @@ const Projects = (): JSX.Element => {
           <div className={styles.techWrapper}>
             <h4 className={styles.technologyTitle}>Tech stack</h4>
 
-            {/* <p className={styles.techDescription}>
+            <p className={styles.techDescription}>
               NX - Next js - React Native - MongoDB - Express
-            </p> */}
+            </p>
           </div>
         </div>
       </div>

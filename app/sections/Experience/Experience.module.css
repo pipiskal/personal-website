@@ -1,5 +1,5 @@
 .wrapper {
-  /* padding: 0px 32px; */
+  /* text-align: center; */
 }
 
 .experienceWrapper {
@@ -7,6 +7,7 @@
   flex-direction: column;
   color: rgba(179, 194, 203);
   margin-top: -36px;
+  margin-bottom: 64px;
 }
 
 .row {
@@ -15,6 +16,11 @@
   justify-content: space-between;
   padding: 24px 0px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+  @media (max-width: 550px) {
+    flex-direction: column;
+    gap: 24px;
+  }
 }
 
 .techTitle {
@@ -22,6 +28,12 @@
   font-weight: 300;
   padding-left: 32px;
   color: rgba(209, 218, 224);
+
+  @media (max-width: 550px) {
+    font-size: 26px;
+    font-weight: 300;
+    padding: 0;
+  }
 }
 
 .rightSideWrapper {
@@ -30,6 +42,11 @@
   flex-direction: column;
   gap: 16px;
   padding-right: 32px;
+
+  @media (max-width: 550px) {
+    align-items: center;
+    padding-right: 0;
+  }
 }
 
 .companyDateWrapper {
@@ -41,6 +58,10 @@
   font-size: 28px;
   font-weight: 300;
   color: rgba(209, 218, 224);
+
+  @media (max-width: 550px) {
+    font-size: 24px;
+  }
 }
 
 .roleText {

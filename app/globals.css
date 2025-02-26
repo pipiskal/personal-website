@@ -25,6 +25,12 @@ h2 {
   color: rgba(209, 218, 224);
   margin-bottom: 64px;
   padding-left: 32px;
+
+  @media (max-width: 550px) {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 40px;
+  }
 }
 
 .maxWrapper {

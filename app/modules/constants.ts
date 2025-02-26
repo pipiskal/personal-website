@@ -52,11 +52,13 @@ export const SKILLS = [
   "Mentoring",
   "Leadership",
   "Project Manager",
-  "Time Management",
+  // "Time Management",
   // "Front-End Development",
-  "Responsive Design",
-  "User Experience",
-  "Web Performance",
+  // "Responsive Design",
+  // "User Experience",
+  // "Web Performance",
   "Strategic Thinking",
-  "Decision Making",
+  // "Decision Making",
 ];
+
+export const TECH_STACK = ["React", "Nextjs"];

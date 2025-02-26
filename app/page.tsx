@@ -10,6 +10,7 @@ import Image from "next/image";
 
 import Carousel from "./components/Carousel/Carousel";
 import Projects from "./sections/Projects/Projects";
+import TechTagList from "./components/TechTagList/TechTagList";
 
 export default function Home() {
   return (
@@ -28,9 +29,11 @@ export default function Home() {
 
       {/* <Carousel /> */}
 
-      <SkillTagList />
+      <TechTagList />
 
       <Experience />
+
+      <SkillTagList />
     </main>
   );
 }

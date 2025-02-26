@@ -1,15 +1,15 @@
 import { JSX } from "react";
-import styles from "./SkillTagList.module.css";
-import { SKILLS } from "@/app/modules/constants";
+import styles from "./TechTagList.module.css";
+import { TECH_STACK } from "@/app/modules/constants";
 import SkillTag from "../SkillTag/SkillTag";
 
-const SkillTagList = (): JSX.Element => {
+const TechTagList = (): JSX.Element => {
   return (
     <div className={`${styles.wrapper} maxWrapper`}>
-      <h2>Skills</h2>
+      <h2>Tech Stack</h2>
 
       <div className={styles.skillsWrapper}>
-        {SKILLS.map((skill) => (
+        {TECH_STACK.map((skill) => (
           <SkillTag key={skill} tagName={skill} />
         ))}
       </div>
@@ -17,4 +17,4 @@ const SkillTagList = (): JSX.Element => {
   );
 };
 
-export default SkillTagList;
+export default TechTagList;

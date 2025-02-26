@@ -114,7 +114,9 @@ const Projects = (): JSX.Element => {
 
             <h4 className={styles.description}>
               A multi page fully responsive design that represents all the basic
-              needs a company needs to show off.
+              needs a company needs to show off. Created using Next js to be
+              easily adjusted for future needs.A fully custom admin panel to
+              cover the customer future needs to manually dsad ad
             </h4>
           </div>
 
@@ -188,7 +190,7 @@ const Projects = (): JSX.Element => {
         </div>
       </div>
 
-      <div className={`${styles.projectCard} ${styles.box4} card`}>
+      <div className={`${styles.projectCard} card`}>
         <div className={`${styles.blurryEffect} ${styles.blurryRed}`} />
 
         <div className={styles.infoSection}>

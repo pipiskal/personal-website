@@ -10,7 +10,7 @@
   perspective: 1200px;
 
   @media (max-width: 550px) {
-    gap: 120px;
+    gap: 80px;
   }
 }
 

@@ -14,7 +14,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px 32px 48px 0px;
+  /* padding: 0px 32px 48px 0px; */
 }
 
 @keyframes fadeInBottomToTopHeroAvatar {
@@ -105,6 +105,11 @@
   margin-bottom: 32px;
 
   animation: fadeInBottomToTopHeroText 1s linear;
+
+  @media (max-width: 550px) {
+    max-width: 90%;
+    font-size: 24px;
+  }
 }
 
 @keyframes fadeInBottomToTopHeroDescription {
@@ -128,6 +133,11 @@
   margin-bottom: 48px;
 
   animation: fadeInBottomToTopHeroDescription 1s linear;
+
+  @media (max-width: 550px) {
+    max-width: 70%;
+    font-size: 16px;
+  }
 }
 
 @keyframes fadeInBottomToTopHeroButtons {

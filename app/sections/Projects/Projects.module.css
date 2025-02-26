@@ -7,11 +7,6 @@
   margin-bottom: 64px;
 
   padding: 0 16px;
-  perspective: 1200px;
-
-  @media (max-width: 550px) {
-    gap: 80px;
-  }
 }
 
 .blurryEffect {
@@ -45,8 +40,6 @@
   position: sticky;
   top: 100px;
   width: 100%;
-  /* height: 760px; */
-
   display: flex;
   justify-content: space-between;
   gap: 24px;
@@ -62,24 +55,25 @@
     flex-direction: column;
     gap: 40px;
     padding: 32px;
-    top: 20px;
+    /* top: 20px; */
+    position: static;
   }
 }
 
-.box2 {
+/* .box2 {
   top: 140px;
 
   @media (max-width: 550px) {
     top: 40px;
   }
-}
+} */
 
 .box3 {
-  top: 180px;
+  /* top: 180px; */
 
-  @media (max-width: 550px) {
+  /* @media (max-width: 550px) {
     top: 60px;
-  }
+  } */
 }
 
 .infoSection {

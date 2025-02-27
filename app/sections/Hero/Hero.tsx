@@ -25,8 +25,8 @@ const Hero = (): JSX.Element => {
       </div>
 
       <p className={styles.heroText}>
-        Passionate Software Engineer creating efficient, scalable, and
-        innovative solutions
+        Software Developer creating efficient, scalable, and innovative
+        solutions
       </p>
 
       <p className={styles.heroDescription}>

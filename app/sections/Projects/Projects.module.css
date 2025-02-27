@@ -180,6 +180,34 @@
   }
 }
 
+.inProgress {
+  width: 152px;
+  padding: 14px;
+  border: 1px solid rgba(244, 249, 197, 0.2);
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(243, 245, 223);
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.4s ease;
+}
+
+.comingSoon {
+  width: 152px;
+  padding: 14px;
+  border: 1px solid rgba(70, 50, 152, 0.5);
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(196, 187, 234);
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.4s ease;
+}
+
 .techWrapper {
   display: flex;
   flex-direction: column;

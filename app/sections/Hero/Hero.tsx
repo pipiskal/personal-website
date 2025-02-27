@@ -1,6 +1,7 @@
 import { JSX } from "react";
 import styles from "./Hero.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 const Hero = (): JSX.Element => {
   return (
@@ -35,10 +36,17 @@ const Hero = (): JSX.Element => {
         solutions
       </p>
 
-      <div className={styles.heroButtons}>
-        <button className={styles.primaryButton}>Contact Me</button>
+      <Link
+        href="mailto:kalimerisspyros@gmail.com"
+        className={styles.heroButtons}
+      >
+        <div className={styles.contactWrapper}>
+          <div className={styles.snake} />
+          <button className={styles.primaryButton}>Contact Me</button>
+        </div>
+
         <button className={styles.secondaryButton}>Download CV</button>
-      </div>
+      </Link>
     </div>
   );
 };

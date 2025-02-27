@@ -88,7 +88,7 @@ const Projects = (): JSX.Element => {
           </div>
 
           <Link
-            href={"https://glekashearing.gr/"}
+            href={"https://www.enospace.com/dedicated-team/"}
             target="_blank"
             className={styles.viewCaseStudy}
           >
@@ -158,7 +158,7 @@ const Projects = (): JSX.Element => {
             <h4 className={styles.technologyTitle}>Tech stack</h4>
 
             <p className={styles.techDescription}>
-              Next js - MongoDB - Express
+              Next js - Api routes, MongoDB, S3
             </p>
           </div>
         </div>
@@ -177,19 +177,13 @@ const Projects = (): JSX.Element => {
             <h3 className={styles.title}>PWA Management system and more</h3>
 
             <h4 className={styles.description}>
-              A single page app for tennis court reservations. Finding matches
-              between opponents. Book your reservation, Control your outcomes
-              improve your play!
+              A single page app for tennis court reservations with REST api.
+              Find matches between opponents. Book your reservation, Control
+              your outcomes improve your play!
             </h4>
           </div>
 
-          <Link
-            href={"https://glekashearing.gr/"}
-            target="_blank"
-            className={styles.viewCaseStudy}
-          >
-            In Progress
-          </Link>
+          <p className={styles.inProgress}>In Progress</p>
         </div>
 
         <div className={styles.imageSection}>
@@ -206,7 +200,7 @@ const Projects = (): JSX.Element => {
             <h4 className={styles.technologyTitle}>Tech stack</h4>
 
             <p className={styles.techDescription}>
-              Next js - MongoDB - Express - Tanstack Query - Zustand
+              NX - Next js - MongoDB - Express - Tanstack - Zustand
             </p>
           </div>
         </div>
@@ -232,13 +226,7 @@ const Projects = (): JSX.Element => {
             </h4>
           </div>
 
-          <Link
-            href={"https://glekashearing.gr/"}
-            target="_blank"
-            className={styles.viewCaseStudy}
-          >
-            View case
-          </Link>
+          <p className={styles.comingSoon}>Coming Soon</p>
         </div>
 
         <div className={styles.imageSection}>

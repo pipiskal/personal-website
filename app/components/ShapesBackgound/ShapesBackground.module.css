@@ -20,9 +20,10 @@
   @media (max-width: 730px) {
     background: radial-gradient(
       circle,
-      rgba(17, 13, 229, 0.514),
-      rgba(212, 214, 227, 0.2)
+      rgba(4, 67, 65, 0.514),
+      rgba(13, 91, 115, 0.2)
     );
+    filter: blur(100px);
   }
 }
 

@@ -86,6 +86,7 @@
 
 .box4 {
   top: 0px;
+  z-index: 10;
 }
 
 .infoSection {

@@ -36,7 +36,7 @@ const Hero = (): JSX.Element => {
       </p>
 
       <div className={styles.heroButtons}>
-        <button className={styles.primaryButton}>Contact Akira</button>
+        <button className={styles.primaryButton}>Contact Me</button>
         <button className={styles.secondaryButton}>Download CV</button>
       </div>
     </div>

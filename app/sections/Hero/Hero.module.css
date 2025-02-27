@@ -188,7 +188,6 @@
 
 .contactWrapper {
   position: relative;
-  text-decoration: none;
   overflow: hidden;
   border-radius: 74px;
   transition: all 200ms ease;
@@ -196,17 +195,12 @@
   & > button {
     font-size: 16px;
   }
-
-  @media (max-width: 730px) {
-    & > button {
-      font-size: 14px;
-    }
-  }
 }
 
 .primaryButton {
   position: relative;
   display: block;
+  text-align: center;
   width: 180px;
   height: 52px;
   border: none;
@@ -217,9 +211,12 @@
   margin: 3px;
   transition: all 200ms ease;
   cursor: pointer;
+  text-decoration: none;
+  line-height: 32px;
 
   @media (max-width: 730px) {
     width: 140px;
+    font-size: 14px;
   }
 }
 

@@ -36,17 +36,19 @@ const Hero = (): JSX.Element => {
         solutions
       </p>
 
-      <Link
-        href="mailto:kalimerisspyros@gmail.com"
-        className={styles.heroButtons}
-      >
+      <div className={styles.heroButtons}>
         <div className={styles.contactWrapper}>
           <div className={styles.snake} />
-          <button className={styles.primaryButton}>Contact Me</button>
+          <Link
+            href="mailto:kalimerisspyros@gmail.com"
+            className={styles.primaryButton}
+          >
+            Contact Me
+          </Link>
         </div>
 
         <button className={styles.secondaryButton}>Download CV</button>
-      </Link>
+      </div>
     </div>
   );
 };

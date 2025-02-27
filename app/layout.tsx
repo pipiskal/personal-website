@@ -10,7 +10,7 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Kalimeris.dev",
+  title: "Kalimeris",
   description: "Created by Kalimeris Spyros",
   keywords: [
     "Software developer",

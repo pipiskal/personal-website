@@ -60,7 +60,7 @@ const Projects = (): JSX.Element => {
 
   useEffect(() => {
     if (window) {
-      setIsWindowHeightSmallerThan840(window.innerHeight < 800);
+      setIsWindowHeightSmallerThan840(window.innerHeight < 750);
     }
   }, []);
 

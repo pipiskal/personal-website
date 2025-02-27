@@ -1,7 +1,7 @@
 "use client";
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import Image from "next/image";
-import { JSX, useCallback, useEffect, useRef } from "react";
+import { JSX, useCallback, useEffect, useRef, useState } from "react";
 import styles from "./Projects.module.css";
 import Link from "next/link";
 
@@ -53,13 +53,72 @@ const Projects = (): JSX.Element => {
   //   };
   // }, []);
 
+  // console.log("windows height", window.innerHeight);
+
+  const [isWindowHeightSmallerThan840, setIsWindowHeightSmallerThan840] =
+    useState(true);
+
+  useEffect(() => {
+    if (window) {
+      setIsWindowHeightSmallerThan840(window.innerHeight < 840);
+    }
+  }, []);
+
   return (
     <div
       id="projectsWrapper"
       className={`${styles.projects} maxWrapper`}
       onScroll={(e) => console.log(e)}
     >
-      <div className={`${styles.projectCard} card`}>
+      <div
+        className={`${styles.projectCard} ${
+          isWindowHeightSmallerThan840 && styles.projectCardMedia
+        } card `}
+      >
+        <div className={`${styles.blurryEffect} ${styles.blurryPurple}`} />
+
+        <div className={styles.infoSection}>
+          <div>
+            <h3 className={styles.title}>Marketing template site</h3>
+
+            <h4 className={styles.description}>
+              A multi page fully responsive design that represents all the basic
+              needs a company needs to show off.
+            </h4>
+          </div>
+
+          <Link
+            href={"https://glekashearing.gr/"}
+            target="_blank"
+            className={styles.viewCaseStudy}
+          >
+            View case
+          </Link>
+        </div>
+
+        <div className={styles.imageSection}>
+          <div className={styles.projectImageWrapper}>
+            <Image
+              src="/enospace.png"
+              alt="showing a portfolio project"
+              fill
+              sizes="428px 270px"
+            />
+          </div>
+
+          <div className={styles.techWrapper}>
+            <h4 className={styles.technologyTitle}>Tech stack</h4>
+
+            <p className={styles.techDescription}>Next js</p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        className={`${styles.projectCard} ${
+          isWindowHeightSmallerThan840 && styles.projectCardMedia
+        } ${styles.box2} card`}
+      >
         <div className={`${styles.blurryEffect} ${styles.blurryGreen}`} />
 
         <div className={styles.infoSection}>
@@ -70,9 +129,9 @@ const Projects = (): JSX.Element => {
 
             <h4 className={styles.description}>
               Achieved the main objective to appear first under google search.
-              100% SEO using server side rendering leveraging Next.js
-              capabilities. A fully custom admin panel to cover the customer
-              future needs to manually change and add content.
+              100% SEO using server side rendering leveraging Next.js.
+              {/* capabilities. A fully custom admin panel to cover the customer
+              future needs to manually change and add content. */}
             </h4>
           </div>
 
@@ -105,49 +164,12 @@ const Projects = (): JSX.Element => {
         </div>
       </div>
 
-      <div className={`${styles.projectCard} ${styles.box2} card `}>
-        <div className={`${styles.blurryEffect} ${styles.blurryPurple}`} />
-
-        <div className={styles.infoSection}>
-          <div>
-            <h3 className={styles.title}>Marketing template site</h3>
-
-            <h4 className={styles.description}>
-              A multi page fully responsive design that represents all the basic
-              needs a company needs to show off. Created using Next js to be
-              easily adjusted for future needs.A fully custom admin panel to
-              cover the customer future needs to manually dsad ad
-            </h4>
-          </div>
-
-          <Link
-            href={"https://glekashearing.gr/"}
-            target="_blank"
-            className={styles.viewCaseStudy}
-          >
-            View case
-          </Link>
-        </div>
-
-        <div className={styles.imageSection}>
-          <div className={styles.projectImageWrapper}>
-            <Image
-              src="/enospace.png"
-              alt="showing a portfolio project"
-              fill
-              sizes="428px 270px"
-            />
-          </div>
-
-          <div className={styles.techWrapper}>
-            <h4 className={styles.technologyTitle}>Tech stack</h4>
-
-            <p className={styles.techDescription}>Next js</p>
-          </div>
-        </div>
-      </div>
-
-      <div id="" className={`${styles.projectCard} ${styles.box3}  card`}>
+      <div
+        id=""
+        className={`${styles.projectCard} ${
+          isWindowHeightSmallerThan840 && styles.projectCardMedia
+        } ${styles.box3}  card`}
+      >
         <div className={`${styles.blurryEffect} ${styles.blurryYellow}`} />
 
         <div className={styles.infoSection}>
@@ -155,9 +177,9 @@ const Projects = (): JSX.Element => {
             <h3 className={styles.title}>PWA Management system and more</h3>
 
             <h4 className={styles.description}>
-              A single page app that handles tennis court reservations. Finding
-              matches between opponents that are registered. Book your
-              reservation, Control your outcomes improve your play!
+              A single page app for tennis court reservations. Finding matches
+              between opponents. Book your reservation, Control your outcomes
+              improve your play!
             </h4>
           </div>
 
@@ -190,7 +212,11 @@ const Projects = (): JSX.Element => {
         </div>
       </div>
 
-      <div className={`${styles.projectCard} card`}>
+      <div
+        className={`${styles.projectCard} ${
+          isWindowHeightSmallerThan840 && styles.projectCardMedia
+        } card`}
+      >
         <div className={`${styles.blurryEffect} ${styles.blurryRed}`} />
 
         <div className={styles.infoSection}>

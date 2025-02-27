@@ -215,7 +215,7 @@ const Projects = (): JSX.Element => {
       <div
         className={`${styles.projectCard} ${
           isWindowHeightSmallerThan840 && styles.projectCardMedia
-        } card`}
+        } ${styles.box4} card`}
       >
         <div className={`${styles.blurryEffect} ${styles.blurryRed}`} />
 

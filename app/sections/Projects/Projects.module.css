@@ -84,6 +84,10 @@
   }
 }
 
+.box4 {
+  top: 0px;
+}
+
 .infoSection {
   display: flex;
   flex-direction: column;

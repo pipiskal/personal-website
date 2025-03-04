@@ -4,8 +4,11 @@ import Image from "next/image";
 import { JSX, useCallback, useEffect, useRef, useState } from "react";
 import styles from "./Projects.module.css";
 import Link from "next/link";
+// import { useRouter } from "next/navigation";
 
 const Projects = (): JSX.Element => {
+  // const router = useRouter();
+
   // const handleScroll = (cards: any, stickyOffset, maxScale) => {
   //   cards.forEach((card, index) => {
   //     const cardRect = card.getBoundingClientRect();
@@ -87,13 +90,16 @@ const Projects = (): JSX.Element => {
             </h4>
           </div>
 
-          <Link
-            href={"https://www.enospace.com/dedicated-team/"}
-            target="_blank"
+          <div
+            // href={"https://www.enospace.com/dedicated-team/"}
+            // target="_blank"
             className={styles.viewCaseStudy}
+            onClick={() =>
+              window.open("https://www.enospace.com/dedicated-team/")
+            }
           >
             View case
-          </Link>
+          </div>
         </div>
 
         <div className={styles.imageSection}>
@@ -135,13 +141,12 @@ const Projects = (): JSX.Element => {
             </h4>
           </div>
 
-          <Link
-            href={"https://glekashearing.gr/"}
-            target="_blank"
+          <div
             className={styles.viewCaseStudy}
+            onClick={() => window.open("https://glekashearing.gr/")}
           >
             View case
-          </Link>
+          </div>
         </div>
 
         <div className={styles.imageSection}>

@@ -28,7 +28,7 @@ export const EXPERIENCE = [
     workplace: "London, United Kingdom - Full time - remote",
   },
   {
-    techRole: "Teacher",
+    techRole: "Python Teacher",
     company: "Algorithmics Greece",
     startingDate: "Dec 2021",
     endingDate: "Jan 2023",

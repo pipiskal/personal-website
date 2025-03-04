@@ -1,8 +1,8 @@
 import { JSX } from "react";
 import styles from "./Hero.module.css";
 import Image from "next/image";
-import Link from "next/link";
 import ContactButton from "./ContactButton/ContactButton";
+import DownloadCvButton from "./DownloadCvButton/DownloadCvButton";
 
 const Hero = (): JSX.Element => {
   return (
@@ -40,15 +40,7 @@ const Hero = (): JSX.Element => {
       <div className={styles.heroButtons}>
         <ContactButton />
 
-        <Link
-          download
-          href="/KALIMERIS_SPYROS_CV.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={styles.secondaryButton}
-        >
-          Download CV
-        </Link>
+        <DownloadCvButton />
       </div>
     </div>
   );

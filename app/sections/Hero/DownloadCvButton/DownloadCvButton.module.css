@@ -1,0 +1,17 @@
+.secondaryButton {
+  width: 180px;
+  height: 52px;
+  padding: 10px 24px;
+  border-radius: 30px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  line-height: 32px;
+
+  @media (max-width: 730px) {
+    width: 150px;
+  }
+}

@@ -169,6 +169,7 @@
   font-size: 14px;
   transition: all 0.4s ease;
   cursor: pointer;
+  z-index: 2;
 
   &:hover {
     font-weight: 600;

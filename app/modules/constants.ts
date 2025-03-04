@@ -7,7 +7,7 @@ export const EXPERIENCE = [
     workplace: "Greece - Contract - remote",
   },
   {
-    techRole: "Fullstack Software Engineer",
+    techRole: "Fullstack Software Developer",
     company: "Freelance",
     startingDate: "Mar 2024",
     endingDate: "Present",

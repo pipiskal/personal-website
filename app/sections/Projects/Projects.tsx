@@ -99,7 +99,7 @@ const Projects = (): JSX.Element => {
         <div className={styles.imageSection}>
           <div className={styles.projectImageWrapper}>
             <Image
-              src="/enospace.png"
+              src="/enospace.webp"
               alt="showing a portfolio project"
               fill
               sizes="428px 270px"
@@ -147,7 +147,7 @@ const Projects = (): JSX.Element => {
         <div className={styles.imageSection}>
           <div className={styles.projectImageWrapper}>
             <Image
-              src="/glekasHearing.png"
+              src="/glekasHearing.webp"
               alt="showing a portfolio project"
               fill
               sizes="428px 270px"
@@ -189,7 +189,7 @@ const Projects = (): JSX.Element => {
         <div className={styles.imageSection}>
           <div className={styles.projectImageWrapper}>
             <Image
-              src="/keletron.jpg"
+              src="/keletron.webp"
               alt="showing a portfolio project"
               fill
               sizes="428px 270px"
@@ -232,7 +232,7 @@ const Projects = (): JSX.Element => {
         <div className={styles.imageSection}>
           <div className={styles.projectImageWrapper}>
             <Image
-              src="/events.jpg"
+              src="/events.webp"
               alt="showing a portfolio project"
               fill
               sizes="428px 270px"

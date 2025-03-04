@@ -7,6 +7,7 @@ import Experience from "./sections/Experience/Experience";
 
 import Projects from "./sections/Projects/Projects";
 import TechTagList from "./components/TechTagList/TechTagList";
+import ContactDetails from "./sections/ContactDetails/ContactDetails";
 
 export default function Home() {
   return (
@@ -30,6 +31,8 @@ export default function Home() {
       <Experience />
 
       <SkillTagList />
+
+      <ContactDetails />
     </main>
   );
 }

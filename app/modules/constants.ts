@@ -47,11 +47,11 @@ export const EDUCATION = [{}];
 
 export const SKILLS = [
   "Product Oriented",
+  "Project Manager",
   "Effective Communication",
   "Task Prioritization",
   "Mentoring",
   "Leadership",
-  "Project Manager",
   // "Time Management",
   // "Front-End Development",
   // "Responsive Design",

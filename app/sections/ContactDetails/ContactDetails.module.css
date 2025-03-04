@@ -1,0 +1,33 @@
+.wrapper {
+  color: white;
+  margin-top: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+
+  @media (max-width: 730px) {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+.tooltip {
+  position: absolute;
+  top: -48px;
+  left: 20%;
+  opacity: 0;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 32px;
+
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+
+  transition: all 700ms ease;
+}
+
+.tooltipVisible {
+  opacity: 1;
+}

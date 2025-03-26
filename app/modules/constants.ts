@@ -23,8 +23,8 @@ export const EXPERIENCE = [
   {
     techRole: "Front-End Developer",
     company: "Study Hall Ltd",
-    startingDate: "Mar 2022",
-    endingDate: "Jun 2023",
+    startingDate: "Jan 2021",
+    endingDate: "Feb 2022",
     workplace: "London, United Kingdom - Full time - remote",
   },
   {

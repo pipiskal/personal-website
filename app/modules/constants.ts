@@ -1,17 +1,17 @@
 export const EXPERIENCE = [
   {
-    techRole: "Lead Front-End Developer",
-    company: "Noesis Solutions",
-    startingDate: "Sep 2024",
-    endingDate: "Present",
-    workplace: "Greece - Contract - remote",
-  },
-  {
     techRole: "Fullstack Software Developer",
     company: "Freelance",
     startingDate: "Mar 2024",
     endingDate: "Present",
     workplace: "Greece - remote",
+  },
+  {
+    techRole: "Lead Front-End Developer",
+    company: "Noesis Solutions",
+    startingDate: "Sep 2024",
+    endingDate: "Present",
+    workplace: "Greece - Contract - remote",
   },
   {
     techRole: "Front-End Developer",

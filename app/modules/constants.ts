@@ -7,6 +7,13 @@ export const EXPERIENCE = [
     workplace: "Greece - remote",
   },
   {
+    techRole: "Senior Front-End Developer",
+    company: "Inlecom",
+    startingDate: "Sep 2025",
+    endingDate: "Present",
+    workplace: "Greece - Contract - remote",
+  },
+  {
     techRole: "Lead Front-End Developer",
     company: "Noesis Solutions",
     startingDate: "Sep 2024",
